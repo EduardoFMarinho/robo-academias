@@ -3,8 +3,8 @@ import type { InlineKeyboardButton } from "telegraf/types";
 
 import { env } from "../../config/env.js";
 import { logger } from "../../shared/logger.js";
-import type { ScrapeProgressEvent } from "../academies/types.js";
 import type { PriceMonitorService } from "../monitor/price-monitor-service.js";
+import type { ScrapeProgressEvent } from "../monitor/types.js";
 import {
   formatDashboardMessage,
   formatLogsMessage,
@@ -37,7 +37,7 @@ const localApiUrl = new URL("/api/overview", env.APP_BASE_URL).toString();
 
 const buildMenu = () => {
   const rows: Array<Array<InlineKeyboardButton & { hide?: boolean }>> = [
-    [Markup.button.callback("💸 Planos e preços", "prices")],
+    [Markup.button.callback("💵 Planos e preços", "prices")],
     [Markup.button.callback("📊 Dashboard", "status")],
     [Markup.button.callback("🧾 Logs", "logs")],
     [Markup.button.callback("🚀 Rodar varredura", "scrape")]

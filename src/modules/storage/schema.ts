@@ -3,13 +3,7 @@ import { z } from "zod";
 const gymPlanSchema = z.object({
   name: z.string(),
   headlinePrice: z.string().nullable(),
-  pricePeriod: z.string().nullable(),
-  promotionalText: z.string().nullable(),
-  commitment: z.string().nullable(),
-  enrollmentFee: z.string().nullable(),
-  annualFee: z.string().nullable(),
-  description: z.string().nullable(),
-  benefits: z.array(z.string()).default([])
+  pricePeriod: z.string().nullable()
 });
 
 const gymStateSchema = z.object({

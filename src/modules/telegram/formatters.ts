@@ -1,5 +1,5 @@
 import { env } from "../../config/env.js";
-import type { ScrapeProgressEvent } from "../academies/types.js";
+import type { ScrapeProgressEvent } from "../monitor/types.js";
 import type { AppDatabase, GymPlanState } from "../storage/schema.js";
 
 const dateTimeFormatter = new Intl.DateTimeFormat("pt-BR", {
@@ -171,22 +171,9 @@ const sortPlansByPrice = (plans: GymPlanState[]): GymPlanState[] => {
 };
 
 const summarizePlan = (plan: GymPlanState): string => {
-  const summary = [plan.headlinePrice, plan.commitment].filter(Boolean).join(" • ");
-  const promo = plan.promotionalText ? `Promoção: ${plan.promotionalText}` : null;
-  const fees = [plan.enrollmentFee ? `Matrícula: ${plan.enrollmentFee}` : null, plan.annualFee ? `Anuidade: ${plan.annualFee}` : null]
-    .filter(Boolean)
-    .join(" • ");
-  const benefits =
-    plan.benefits.length > 0 ? `Benefícios: ${plan.benefits.slice(0, 3).join(", ")}` : null;
+  const summary = [plan.headlinePrice, plan.pricePeriod].filter(Boolean).join(" • ");
 
-  return [
-    `• <b>${escapeHtml(plan.name)}</b>${summary ? ` — ${escapeHtml(summary)}` : ""}`,
-    promo ? `  ${escapeHtml(promo)}` : null,
-    fees ? `  ${escapeHtml(fees)}` : null,
-    benefits ? `  ${escapeHtml(benefits)}` : null
-  ]
-    .filter(Boolean)
-    .join("\n");
+  return `• <b>${escapeHtml(plan.name)}</b>${summary ? ` — ${escapeHtml(summary)}` : ""}`;
 };
 
 export const formatWelcomeMessage = (publicApiUrl: string | null, localApiUrl: string): string => {
@@ -227,7 +214,7 @@ export const formatPricesMessage = (database: AppDatabase): string => {
     ].join("\n");
   });
 
-  return [`<b>💸 Planos e Preços</b>`, ...sections].join("\n\n");
+  return [`<b>💵 Planos e Preços</b>`, ...sections].join("\n\n");
 };
 
 export const formatDashboardMessage = (database: AppDatabase, running: boolean): string => {
@@ -413,7 +400,7 @@ export const formatSummaryMessage = (summary: {
       sortedPlans.length > 0
         ? sortedPlans
             .map((plan) => {
-              const planSummary = [plan.headlinePrice, plan.commitment].filter(Boolean).join(" • ");
+              const planSummary = [plan.headlinePrice, plan.pricePeriod].filter(Boolean).join(" • ");
               return `  • ${escapeHtml(plan.name)}${planSummary ? ` — ${escapeHtml(planSummary)}` : ""}`;
             })
             .join("\n")

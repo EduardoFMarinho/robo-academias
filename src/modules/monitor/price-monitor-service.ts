@@ -2,10 +2,11 @@ import { randomUUID } from "node:crypto";
 
 import { env } from "../../config/env.js";
 import { logger } from "../../shared/logger.js";
-import type { GymDefinition, RunScrapeOptions, ScrapeOutcome, ScrapeProgressEvent, ScrapeSummary } from "../academies/types.js";
 import { SeleniumPriceScraper } from "../academies/selenium-price-scraper.js";
+import type { GymDefinition } from "../academies/types.js";
 import type { FileDatabase } from "../storage/file-database.js";
 import type { AppDatabase, DatabaseLogEntry } from "../storage/schema.js";
+import type { RunScrapeOptions, ScrapeOutcome, ScrapeProgressEvent, ScrapeSummary } from "./types.js";
 
 const trimLogs = (database: AppDatabase): void => {
   if (database.logs.length > env.LOG_RETENTION_LIMIT) {
@@ -27,6 +28,7 @@ const pushLog = (
 type ProgressListener = NonNullable<RunScrapeOptions["onProgress"]>;
 
 export class PriceMonitorService {
+  // Quando duas requisicoes chegam juntas, todas acompanham a mesma execucao.
   private currentRun:
     | {
         executionId: string;
@@ -146,6 +148,7 @@ export class PriceMonitorService {
 
     const results: ScrapeOutcome[] = [];
 
+    // A varredura segue em sequencia para facilitar a leitura do progresso e do navegador.
     for (const [index, gym] of this.gyms.entries()) {
       await notifyProgress({
         type: "gym_started",
