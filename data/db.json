@@ -1,0 +1,670 @@
+{
+  "meta": {
+    "version": 1,
+    "createdAt": "2026-04-26T14:05:31.123Z",
+    "updatedAt": "2026-04-26T15:34:18.161Z"
+  },
+  "status": {
+    "totalRuns": 17,
+    "successfulRuns": 17,
+    "failedRuns": 0,
+    "partialRuns": 0,
+    "lastRunAt": "2026-04-26T15:34:18.159Z",
+    "lastRunStatus": "success",
+    "lastTrigger": "telegram:8496724843"
+  },
+  "executions": [
+    {
+      "id": "8da87910-b1a8-4caf-a58b-407cf22eec5d",
+      "trigger": "telegram:8496724843",
+      "startedAt": "2026-04-26T15:33:56.749Z",
+      "finishedAt": "2026-04-26T15:34:18.159Z",
+      "status": "success",
+      "successfulGyms": 2,
+      "failedGyms": 0,
+      "note": "Todos os sites responderam."
+    },
+    {
+      "id": "243d8b09-3b27-4fac-8a05-5c8efd9cbe52",
+      "trigger": "telegram:8496724843",
+      "startedAt": "2026-04-26T15:30:22.820Z",
+      "finishedAt": "2026-04-26T15:30:39.542Z",
+      "status": "success",
+      "successfulGyms": 2,
+      "failedGyms": 0,
+      "note": "Todos os sites responderam."
+    },
+    {
+      "id": "8abe2fe2-5bf0-4171-b78d-8bf389ab93e0",
+      "trigger": "telegram:8496724843",
+      "startedAt": "2026-04-26T15:29:50.503Z",
+      "finishedAt": "2026-04-26T15:30:13.485Z",
+      "status": "success",
+      "successfulGyms": 2,
+      "failedGyms": 0,
+      "note": "Todos os sites responderam."
+    },
+    {
+      "id": "af01f07e-b0bb-45ff-b02f-3bdcc9931826",
+      "trigger": "telegram:8496724843",
+      "startedAt": "2026-04-26T15:18:03.223Z",
+      "finishedAt": "2026-04-26T15:18:24.522Z",
+      "status": "success",
+      "successfulGyms": 2,
+      "failedGyms": 0,
+      "note": "Todos os sites responderam."
+    },
+    {
+      "id": "c586ac27-0a4e-429e-b3e2-792af9fa16cd",
+      "trigger": "telegram:8496724843",
+      "startedAt": "2026-04-26T15:10:51.319Z",
+      "finishedAt": "2026-04-26T15:11:08.321Z",
+      "status": "success",
+      "successfulGyms": 2,
+      "failedGyms": 0,
+      "note": "Todos os sites responderam."
+    },
+    {
+      "id": "4d60baf6-9d53-4a84-91a5-572ce345ed43",
+      "trigger": "cli",
+      "startedAt": "2026-04-26T15:05:43.986Z",
+      "finishedAt": "2026-04-26T15:06:01.235Z",
+      "status": "success",
+      "successfulGyms": 2,
+      "failedGyms": 0,
+      "note": "Todos os sites responderam."
+    },
+    {
+      "id": "72e1e143-b610-4413-af22-84c3d7b95510",
+      "trigger": "cli",
+      "startedAt": "2026-04-26T14:51:44.109Z",
+      "finishedAt": "2026-04-26T14:52:06.617Z",
+      "status": "success",
+      "successfulGyms": 2,
+      "failedGyms": 0,
+      "note": "Todos os sites responderam."
+    },
+    {
+      "id": "feed0f8f-7807-4c2c-9837-7b343a5bbdd8",
+      "trigger": "cli",
+      "startedAt": "2026-04-26T14:47:22.780Z",
+      "finishedAt": "2026-04-26T14:47:42.012Z",
+      "status": "success",
+      "successfulGyms": 2,
+      "failedGyms": 0,
+      "note": "Todos os sites responderam."
+    },
+    {
+      "id": "15095dad-864d-4013-b4e1-ee896adb5c7e",
+      "trigger": "cli",
+      "startedAt": "2026-04-26T14:46:53.855Z",
+      "finishedAt": "2026-04-26T14:47:06.887Z",
+      "status": "success",
+      "successfulGyms": 2,
+      "failedGyms": 0,
+      "note": "Todos os sites responderam."
+    },
+    {
+      "id": "de41963e-30f2-4f55-819c-7aeec0b90e69",
+      "trigger": "cli",
+      "startedAt": "2026-04-26T14:45:21.989Z",
+      "finishedAt": "2026-04-26T14:45:50.744Z",
+      "status": "success",
+      "successfulGyms": 2,
+      "failedGyms": 0,
+      "note": "Todos os sites responderam."
+    },
+    {
+      "id": "31e82a33-57c2-4f10-897d-2fe73b87c6e6",
+      "trigger": "telegram:8496724843",
+      "startedAt": "2026-04-26T14:42:30.547Z",
+      "finishedAt": "2026-04-26T14:42:50.115Z",
+      "status": "success",
+      "successfulGyms": 2,
+      "failedGyms": 0,
+      "note": "Todos os sites responderam."
+    },
+    {
+      "id": "0817e2f0-3aa0-4547-9b4f-e02e6b7a734f",
+      "trigger": "cli",
+      "startedAt": "2026-04-26T14:39:18.274Z",
+      "finishedAt": "2026-04-26T14:39:40.088Z",
+      "status": "success",
+      "successfulGyms": 2,
+      "failedGyms": 0,
+      "note": "Todos os sites responderam."
+    },
+    {
+      "id": "1f9addb5-5504-4cea-916a-1bad33b55251",
+      "trigger": "telegram:8496724843",
+      "startedAt": "2026-04-26T14:35:28.839Z",
+      "finishedAt": "2026-04-26T14:35:46.943Z",
+      "status": "success",
+      "successfulGyms": 2,
+      "failedGyms": 0,
+      "note": "Todos os sites responderam."
+    },
+    {
+      "id": "dda0c4fa-7679-4bf5-ba77-92cf5dd3e9ce",
+      "trigger": "cli",
+      "startedAt": "2026-04-26T14:32:11.467Z",
+      "finishedAt": "2026-04-26T14:32:28.988Z",
+      "status": "success",
+      "successfulGyms": 2,
+      "failedGyms": 0,
+      "note": "Todos os sites responderam."
+    },
+    {
+      "id": "2c7b03a1-ff9a-4929-9ba6-7de3f0edae6c",
+      "trigger": "cli",
+      "startedAt": "2026-04-26T14:11:31.999Z",
+      "finishedAt": "2026-04-26T14:11:49.039Z",
+      "status": "success",
+      "successfulGyms": 2,
+      "failedGyms": 0,
+      "note": "Todos os sites responderam."
+    },
+    {
+      "id": "6c7e27c0-ed65-4685-ab5f-87eb19dd9e33",
+      "trigger": "cli",
+      "startedAt": "2026-04-26T14:08:53.205Z",
+      "finishedAt": "2026-04-26T14:09:12.183Z",
+      "status": "success",
+      "successfulGyms": 2,
+      "failedGyms": 0,
+      "note": "Todos os sites responderam."
+    },
+    {
+      "id": "953a2791-89ec-460d-bbc9-bb7754b27f04",
+      "trigger": "cli",
+      "startedAt": "2026-04-26T14:07:23.676Z",
+      "finishedAt": "2026-04-26T14:07:49.918Z",
+      "status": "success",
+      "successfulGyms": 2,
+      "failedGyms": 0,
+      "note": "Todos os sites responderam."
+    },
+    {
+      "id": "bb89cbf8-d740-4aa7-86e9-4a97b247fff4",
+      "trigger": "cli",
+      "startedAt": "2026-04-26T14:06:28.055Z",
+      "finishedAt": null,
+      "status": "running",
+      "successfulGyms": 0,
+      "failedGyms": 0,
+      "note": null
+    }
+  ],
+  "gyms": [
+    {
+      "id": "smartfit",
+      "name": "Smart Fit",
+      "sourceUrl": "https://www.smartfit.com.br/planos",
+      "status": "ok",
+      "currentPrice": "R$ 159,90",
+      "currentPlanName": "Plano Black",
+      "detectedPrices": [
+        "R$ 159,90",
+        "R$ 0,00",
+        "R$ 99,90",
+        "R$ 119,90",
+        "R$ 19,90",
+        "R$ 39,90",
+        "R$ 24,90"
+      ],
+      "plans": [
+        {
+          "name": "Plano Black",
+          "headlinePrice": "R$ 159,90",
+          "pricePeriod": "/mês",
+          "promotionalText": "R$ 0,00* | 100% OFF | no 1º mês, depois R$ 159,90/mês",
+          "commitment": "12 meses de fidelidade",
+          "enrollmentFee": null,
+          "annualFee": null,
+          "description": "Treine em qualquer academia da Smart Fit, seja no Brasil ou na América Latina. São +2.000 unidades em 16 países!",
+          "benefits": [
+            "Acesso ilimitado a +2.000 academias",
+            "Leve 5 amigos por mês para treinar com você",
+            "Cadeira de massagem",
+            "Skeelo App (Audiobook)*",
+            "Área de musculação e aeróbicos",
+            "Smart Fit App"
+          ]
+        },
+        {
+          "name": "Plano Fit",
+          "headlinePrice": "R$ 99,90",
+          "pricePeriod": "/mês",
+          "promotionalText": "R$ 0,00* | 100% OFF | no 1º mês, depois R$ 99,90/mês",
+          "commitment": "12 meses de fidelidade",
+          "enrollmentFee": null,
+          "annualFee": null,
+          "description": "Nosso plano mais econômico para você se exercitar quando e quanto quiser na academia que escolher!",
+          "benefits": [
+            "Acesso ilimitado a +2.000 academias",
+            "Leve 5 amigos por mês para treinar com você",
+            "Cadeira de massagem",
+            "Skeelo App (Audiobook)*",
+            "Área de musculação e aeróbicos",
+            "Smart Fit App"
+          ]
+        },
+        {
+          "name": "Plano Smart",
+          "headlinePrice": "R$ 119,90",
+          "pricePeriod": "/mês",
+          "promotionalText": "R$ 0,00* | 100% OFF | no 1º mês, depois R$ 119,90/mês",
+          "commitment": "Sem fidelidade",
+          "enrollmentFee": null,
+          "annualFee": null,
+          "description": "Nosso plano para você que não quer se comprometer, mas quer treinar em uma academia de alto padrão!",
+          "benefits": [
+            "Acesso ilimitado a +2.000 academias",
+            "Leve 5 amigos por mês para treinar com você",
+            "Cadeira de massagem",
+            "Skeelo App (Audiobook)*",
+            "Área de musculação e aeróbicos",
+            "Smart Fit App"
+          ]
+        }
+      ],
+      "sourceHint": "plans:smartfit",
+      "lastCheckedAt": "2026-04-26T15:33:56.758Z",
+      "lastSuccessfulCheckAt": "2026-04-26T15:33:56.758Z",
+      "lastError": null,
+      "screenshotPath": null,
+      "successCount": 17,
+      "failureCount": 0
+    },
+    {
+      "id": "bluefit",
+      "name": "Bluefit",
+      "sourceUrl": "https://www.bluefit.com.br/unidade/aclimacao",
+      "status": "ok",
+      "currentPrice": "R$ 189,90",
+      "currentPlanName": "GOLD PLUS",
+      "detectedPrices": [
+        "R$ 189,90",
+        "R$ 169,90",
+        "R$ 149,90",
+        "R$ 60,00",
+        "R$ 99,90",
+        "R$ 194,90",
+        "R$ 214,90"
+      ],
+      "plans": [
+        {
+          "name": "GOLD PLUS",
+          "headlinePrice": "R$ 189,90",
+          "pricePeriod": null,
+          "promotionalText": "Grátis No 1º mês",
+          "commitment": "Fidelidade de 12 meses",
+          "enrollmentFee": null,
+          "annualFee": null,
+          "description": null,
+          "benefits": [
+            "Bioimpedância (1 avaliação por mês)",
+            "Treine em todas as unidades",
+            "Leve 5 amigos para treinar com você",
+            "Acesso a todas as aulas coletivas"
+          ]
+        },
+        {
+          "name": "GOLD",
+          "headlinePrice": "R$ 169,90",
+          "pricePeriod": null,
+          "promotionalText": "Grátis No 1º mês",
+          "commitment": "Fidelidade de 12 meses",
+          "enrollmentFee": null,
+          "annualFee": null,
+          "description": null,
+          "benefits": [
+            "Bioimpedância (1 avaliação por mês)",
+            "Treine em todas as unidades",
+            "Leve 5 amigos para treinar com você",
+            "Acesso a todas as aulas coletivas"
+          ]
+        },
+        {
+          "name": "BLUE",
+          "headlinePrice": "R$ 149,90",
+          "pricePeriod": "por mês",
+          "promotionalText": null,
+          "commitment": "Sem fidelidade",
+          "enrollmentFee": "R$ 60,00",
+          "annualFee": "R$ 99,90",
+          "description": null,
+          "benefits": [
+            "Bioimpedância (1 avaliação por mês)",
+            "Treine na unidade que escolheu",
+            "Leve 5 amigos para treinar com você",
+            "Acesso a todas as aulas coletivas"
+          ]
+        },
+        {
+          "name": "PREMIUM",
+          "headlinePrice": "R$ 194,90",
+          "pricePeriod": "por mês",
+          "promotionalText": null,
+          "commitment": "Sem fidelidade",
+          "enrollmentFee": null,
+          "annualFee": null,
+          "description": null,
+          "benefits": [
+            "Bioimpedância (1 avaliação por mês)",
+            "Treine em todas as unidades",
+            "Leve 5 amigos para treinar com você",
+            "Acesso a todas as aulas coletivas"
+          ]
+        },
+        {
+          "name": "PREMIUM PLUS",
+          "headlinePrice": "R$ 214,90",
+          "pricePeriod": "por mês",
+          "promotionalText": null,
+          "commitment": "Sem fidelidade",
+          "enrollmentFee": null,
+          "annualFee": null,
+          "description": null,
+          "benefits": [
+            "Bioimpedância (1 avaliação por mês)",
+            "Treine em todas as unidades",
+            "Leve 5 amigos para treinar com você",
+            "Acesso a todas as aulas coletivas"
+          ]
+        }
+      ],
+      "sourceHint": "plans:bluefit",
+      "lastCheckedAt": "2026-04-26T15:34:11.244Z",
+      "lastSuccessfulCheckAt": "2026-04-26T15:34:11.244Z",
+      "lastError": null,
+      "screenshotPath": null,
+      "successCount": 17,
+      "failureCount": 0
+    }
+  ],
+  "logs": [
+    {
+      "timestamp": "2026-04-26T14:52:06.620Z",
+      "level": "info",
+      "message": "Varredura finalizada.",
+      "context": {
+        "executionId": "72e1e143-b610-4413-af22-84c3d7b95510",
+        "trigger": "cli",
+        "status": "success",
+        "successfulGyms": 2,
+        "failedGyms": 0
+      }
+    },
+    {
+      "timestamp": "2026-04-26T15:05:43.990Z",
+      "level": "info",
+      "message": "Varredura iniciada.",
+      "context": {
+        "executionId": "4d60baf6-9d53-4a84-91a5-572ce345ed43",
+        "trigger": "cli"
+      }
+    },
+    {
+      "timestamp": "2026-04-26T15:05:53.369Z",
+      "level": "info",
+      "message": "Preço atualizado para Smart Fit.",
+      "context": {
+        "gymId": "smartfit",
+        "planName": "Plano Black",
+        "price": "R$ 159,90",
+        "planCount": 3,
+        "sourceHint": "plans:smartfit"
+      }
+    },
+    {
+      "timestamp": "2026-04-26T15:06:01.231Z",
+      "level": "info",
+      "message": "Preço atualizado para Bluefit.",
+      "context": {
+        "gymId": "bluefit",
+        "planName": "GOLD PLUS",
+        "price": "R$ 189,90",
+        "planCount": 5,
+        "sourceHint": "plans:bluefit"
+      }
+    },
+    {
+      "timestamp": "2026-04-26T15:06:01.238Z",
+      "level": "info",
+      "message": "Varredura finalizada.",
+      "context": {
+        "executionId": "4d60baf6-9d53-4a84-91a5-572ce345ed43",
+        "trigger": "cli",
+        "status": "success",
+        "successfulGyms": 2,
+        "failedGyms": 0
+      }
+    },
+    {
+      "timestamp": "2026-04-26T15:10:51.322Z",
+      "level": "info",
+      "message": "Varredura iniciada.",
+      "context": {
+        "executionId": "c586ac27-0a4e-429e-b3e2-792af9fa16cd",
+        "trigger": "telegram:8496724843"
+      }
+    },
+    {
+      "timestamp": "2026-04-26T15:10:59.848Z",
+      "level": "info",
+      "message": "Preço atualizado para Smart Fit.",
+      "context": {
+        "gymId": "smartfit",
+        "planName": "Plano Black",
+        "price": "R$ 159,90",
+        "planCount": 3,
+        "sourceHint": "plans:smartfit"
+      }
+    },
+    {
+      "timestamp": "2026-04-26T15:11:08.318Z",
+      "level": "info",
+      "message": "Preço atualizado para Bluefit.",
+      "context": {
+        "gymId": "bluefit",
+        "planName": "GOLD PLUS",
+        "price": "R$ 189,90",
+        "planCount": 5,
+        "sourceHint": "plans:bluefit"
+      }
+    },
+    {
+      "timestamp": "2026-04-26T15:11:08.323Z",
+      "level": "info",
+      "message": "Varredura finalizada.",
+      "context": {
+        "executionId": "c586ac27-0a4e-429e-b3e2-792af9fa16cd",
+        "trigger": "telegram:8496724843",
+        "status": "success",
+        "successfulGyms": 2,
+        "failedGyms": 0
+      }
+    },
+    {
+      "timestamp": "2026-04-26T15:18:03.226Z",
+      "level": "info",
+      "message": "Varredura iniciada.",
+      "context": {
+        "executionId": "af01f07e-b0bb-45ff-b02f-3bdcc9931826",
+        "trigger": "telegram:8496724843"
+      }
+    },
+    {
+      "timestamp": "2026-04-26T15:18:15.445Z",
+      "level": "info",
+      "message": "Preço atualizado para Smart Fit.",
+      "context": {
+        "gymId": "smartfit",
+        "planName": "Plano Black",
+        "price": "R$ 159,90",
+        "planCount": 3,
+        "sourceHint": "plans:smartfit"
+      }
+    },
+    {
+      "timestamp": "2026-04-26T15:18:24.519Z",
+      "level": "info",
+      "message": "Preço atualizado para Bluefit.",
+      "context": {
+        "gymId": "bluefit",
+        "planName": "GOLD PLUS",
+        "price": "R$ 189,90",
+        "planCount": 5,
+        "sourceHint": "plans:bluefit"
+      }
+    },
+    {
+      "timestamp": "2026-04-26T15:18:24.525Z",
+      "level": "info",
+      "message": "Varredura finalizada.",
+      "context": {
+        "executionId": "af01f07e-b0bb-45ff-b02f-3bdcc9931826",
+        "trigger": "telegram:8496724843",
+        "status": "success",
+        "successfulGyms": 2,
+        "failedGyms": 0
+      }
+    },
+    {
+      "timestamp": "2026-04-26T15:29:50.848Z",
+      "level": "info",
+      "message": "Varredura iniciada.",
+      "context": {
+        "executionId": "8abe2fe2-5bf0-4171-b78d-8bf389ab93e0",
+        "trigger": "telegram:8496724843"
+      }
+    },
+    {
+      "timestamp": "2026-04-26T15:30:03.349Z",
+      "level": "info",
+      "message": "Preco atualizado para Smart Fit.",
+      "context": {
+        "gymId": "smartfit",
+        "planName": "Plano Black",
+        "price": "R$ 159,90",
+        "planCount": 3,
+        "sourceHint": "plans:smartfit"
+      }
+    },
+    {
+      "timestamp": "2026-04-26T15:30:13.132Z",
+      "level": "info",
+      "message": "Preco atualizado para Bluefit.",
+      "context": {
+        "gymId": "bluefit",
+        "planName": "GOLD PLUS",
+        "price": "R$ 189,90",
+        "planCount": 5,
+        "sourceHint": "plans:bluefit"
+      }
+    },
+    {
+      "timestamp": "2026-04-26T15:30:13.487Z",
+      "level": "info",
+      "message": "Varredura finalizada.",
+      "context": {
+        "executionId": "8abe2fe2-5bf0-4171-b78d-8bf389ab93e0",
+        "trigger": "telegram:8496724843",
+        "status": "success",
+        "successfulGyms": 2,
+        "failedGyms": 0
+      }
+    },
+    {
+      "timestamp": "2026-04-26T15:30:23.160Z",
+      "level": "info",
+      "message": "Varredura iniciada.",
+      "context": {
+        "executionId": "243d8b09-3b27-4fac-8a05-5c8efd9cbe52",
+        "trigger": "telegram:8496724843"
+      }
+    },
+    {
+      "timestamp": "2026-04-26T15:30:31.235Z",
+      "level": "info",
+      "message": "Preco atualizado para Smart Fit.",
+      "context": {
+        "gymId": "smartfit",
+        "planName": "Plano Black",
+        "price": "R$ 159,90",
+        "planCount": 3,
+        "sourceHint": "plans:smartfit"
+      }
+    },
+    {
+      "timestamp": "2026-04-26T15:30:38.955Z",
+      "level": "info",
+      "message": "Preco atualizado para Bluefit.",
+      "context": {
+        "gymId": "bluefit",
+        "planName": "GOLD PLUS",
+        "price": "R$ 189,90",
+        "planCount": 5,
+        "sourceHint": "plans:bluefit"
+      }
+    },
+    {
+      "timestamp": "2026-04-26T15:30:39.543Z",
+      "level": "info",
+      "message": "Varredura finalizada.",
+      "context": {
+        "executionId": "243d8b09-3b27-4fac-8a05-5c8efd9cbe52",
+        "trigger": "telegram:8496724843",
+        "status": "success",
+        "successfulGyms": 2,
+        "failedGyms": 0
+      }
+    },
+    {
+      "timestamp": "2026-04-26T15:33:56.753Z",
+      "level": "info",
+      "message": "Varredura iniciada.",
+      "context": {
+        "executionId": "8da87910-b1a8-4caf-a58b-407cf22eec5d",
+        "trigger": "telegram:8496724843"
+      }
+    },
+    {
+      "timestamp": "2026-04-26T15:34:11.240Z",
+      "level": "info",
+      "message": "Preco atualizado para Smart Fit.",
+      "context": {
+        "gymId": "smartfit",
+        "planName": "Plano Black",
+        "price": "R$ 159,90",
+        "planCount": 3,
+        "sourceHint": "plans:smartfit"
+      }
+    },
+    {
+      "timestamp": "2026-04-26T15:34:18.154Z",
+      "level": "info",
+      "message": "Preco atualizado para Bluefit.",
+      "context": {
+        "gymId": "bluefit",
+        "planName": "GOLD PLUS",
+        "price": "R$ 189,90",
+        "planCount": 5,
+        "sourceHint": "plans:bluefit"
+      }
+    },
+    {
+      "timestamp": "2026-04-26T15:34:18.161Z",
+      "level": "info",
+      "message": "Varredura finalizada.",
+      "context": {
+        "executionId": "8da87910-b1a8-4caf-a58b-407cf22eec5d",
+        "trigger": "telegram:8496724843",
+        "status": "success",
+        "successfulGyms": 2,
+        "failedGyms": 0
+      }
+    }
+  ]
+}
