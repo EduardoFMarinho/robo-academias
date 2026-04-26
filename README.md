@@ -14,7 +14,7 @@ O projeto foi estruturado em camadas para evitar virar um unico `index.js` dific
 
 - `src/config`: leitura e validacao das variaveis de ambiente
 - `src/modules/storage`: persistencia local em `data/db.json`
-- `src/modules/academies`: catalogo das academias, parser de preco e Selenium
+- `src/modules/academies`: arquivos de scraping por academia e Selenium
 - `src/modules/monitor`: caso de uso principal e agendamento
 - `src/modules/api`: API HTTP
 - `src/modules/telegram`: interface do bot
@@ -99,7 +99,113 @@ curl -X POST http://localhost:3000/api/scrape ^
 ```
 
 O resultado mais recente fica salvo em `data/db.json`.
-Agora cada academia salva tambem a lista de planos detectados com nome do plano, preco principal, promocao, fidelidade e beneficios.
+Agora cada academia salva tambem a lista de planos detectados com nome do plano, preco principal e mensalidade ou periodicidade quando essa informacao aparece no site.
+
+## Como adicionar uma nova academia
+
+Hoje o jeito mais simples de adicionar outra academia e seguir o mesmo padrao de `smartfit-site.ts` e `bluefit-site.ts`.
+
+1. Crie um novo arquivo em `src/modules/academies`, por exemplo `panobianco-site.ts`.
+
+2. Dentro dele, exporte:
+
+- um objeto da academia, como `panobiancoGym`
+- uma funcao de scraping, como `scrapePanobianco`
+
+Exemplo:
+
+```ts
+import { By, type WebDriver } from "selenium-webdriver";
+
+import { env } from "../../config/env.js";
+import type { GymDefinition, GymPlan, GymScrapeData } from "./types.js";
+
+export const panobiancoGym: GymDefinition = {
+  id: "panobianco",
+  name: "Panobianco",
+  sourceUrl: env.PANOBIANCO_SOURCE_URL
+};
+
+export const scrapePanobianco = async (driver: WebDriver): Promise<GymScrapeData> => {
+  const xpaths = [
+    {
+      title: "SEU_XPATH_DO_TITULO_1",
+      price: "SEU_XPATH_DO_PRECO_1",
+      monthly: "SEU_XPATH_DA_MENSALIDADE_1"
+    }
+  ];
+
+  const plans: GymPlan[] = [];
+  const detectedPrices: string[] = [];
+
+  for (const item of xpaths) {
+    const title = (await driver.findElement(By.xpath(item.title)).getText()).trim();
+    const price = (await driver.findElement(By.xpath(item.price)).getText()).trim();
+    const monthly = (await driver.findElement(By.xpath(item.monthly)).getText()).trim();
+
+    if (price) {
+      detectedPrices.push(price);
+    }
+
+    plans.push({
+      name: title,
+      headlinePrice: price || null,
+      pricePeriod: monthly || null
+    });
+  }
+
+  return {
+    currentPrice: plans[0]?.headlinePrice ?? null,
+    currentPlanName: plans[0]?.name ?? null,
+    detectedPrices,
+    plans,
+    sourceHint: "xpath:panobianco"
+  };
+};
+```
+
+3. Adicione o novo `id` em `src/modules/academies/types.ts`.
+
+Exemplo:
+
+```ts
+export type GymId = "smartfit" | "bluefit" | "panobianco";
+```
+
+4. Adicione a URL da nova academia em `src/config/env.ts`, `.env` e `.env.example`.
+
+Exemplo:
+
+```txt
+PANOBIANCO_SOURCE_URL=https://site-da-academia.com/planos
+```
+
+5. Importe a nova academia em `src/app/create-application.ts` e inclua no array:
+
+```ts
+const gyms = [smartFitGym, bluefitGym, panobiancoGym];
+```
+
+6. Importe a funcao e o objeto em `src/modules/academies/selenium-price-scraper.ts` e adicione mais um caso na escolha do scraper:
+
+```ts
+const scrapeGym =
+  gym.id === smartFitGym.id
+    ? scrapeSmartFit
+    : gym.id === bluefitGym.id
+      ? scrapeBluefit
+      : gym.id === panobiancoGym.id
+        ? scrapePanobianco
+        : null;
+```
+
+7. Rode uma varredura de teste:
+
+```bash
+npm run scrape:once
+```
+
+Se a nova academia entrou no array `gyms` e o `selenium-price-scraper.ts` souber chamar o scraper dela, ela passa a aparecer automaticamente na API, no Telegram e no `data/db.json`.
 
 ## Endpoints da API
 
